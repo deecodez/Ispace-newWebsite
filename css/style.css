@@ -411,7 +411,7 @@ padding-right: 0.7rem;
 /* End of Portfolio Section */
 
 
-/* Our Offer Section */
+/* Home Our Offer Section */
 
 .our-offer h5{
   color: var(--color1);
@@ -542,6 +542,15 @@ textarea{
   border: 1px solid #151D41;
 }
 
+.form-img{
+  text-align: right;
+}
+
+.form-img img{
+  width: 10%;
+  margin-top: -3rem;
+}
+
 /* End of HOme COntact Section */
 
 /*--------------------------
@@ -616,59 +625,63 @@ padding-bottom: 1rem;
  GET IN TOUCH PAGE
 ---------------------------*/
 
-/* .contact{
-  background: url(../assets/img/contact-bg.jpg) center center / cover no-repeat;
-  background-color: #06062a;
-  opacity: 0.6;
-  height: 100vh;
-} */
-
-.contact {
-  background-image: linear-gradient(rgba(16, 16, 16, 0.6), rgba(16, 16, 16, 0.6)), url(../assets/img/contact-bg.jpg);
-  height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* position: relative; */
+.contact-hero-row{
+  background: url(../assets/img/home-hero-bg.svg) center center / cover no-repeat;
+  /* background-position: bottom center / cover; */
+  background-size: 125%;
+  /* background-repeat: no-repeat; */
+  overflow: hidden;
+  font-family: var(--body_font);
 }
 
 .contact h5{
-  color: white;
-  padding-top: 13rem;
+  color: var(--color1);
+  padding-top: 7rem;
+  padding-bottom: 3rem;
   font-family: var(--body_font);
   font-weight: bold;
   font-size: 28px;
 }
 
-.contact-enquries{
-  background-color: rgb(247, 247, 247);
-  padding: 7rem 0rem;
-  font-family: var(--body_font);
+.contact-socials p i {
+  color: var(--color1);
 }
 
-.contact-enquries h5 {
-  font-size: 26px;
-  color: var(--color3);
-  padding-bottom: 1.5rem;
+.contact p span {
+  font-weight: bold;
 }
-
-.contact-enquries p {
-line-height: 2;
-}
-
-.contact-social a i {
-  font-size: 25px;
-  margin-right: 1rem;
-  color: var(--color3);
-}
-
-/* .contact-social a:hover {
-  font-size: 26px;
-  transition: var(--mainTransition);
-} */
 
 /*--------------------------
  END OF GET IN TOUCH PAGE
+---------------------------*/
+
+
+/*--------------------------
+    OUR OFFER PAGE
+---------------------------*/
+
+.what-we-offer{
+  font-family: var(--body_font);
+  margin-top: 5rem;
+}
+
+.what-we-offer-heading h5{
+  color: var(--color1);
+  font-weight: normal;
+  padding-top: 3rem;
+  font-size: 28px;
+}
+
+.what-we-offer-text p{
+  text-align: justify;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 18px;
+  color: var(--color3);
+}
+
+/*--------------------------
+ END OF OUR OFFERPAGE
 ---------------------------*/
 
 
@@ -681,6 +694,12 @@ footer{
   padding: 3rem 0.2rem;
   border: 1px solid #707070;
   font-family: var(--body_font);
+}
+
+.footer-logo img{
+  width: 25%;
+  margin-top: -1rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer-about p{
@@ -813,6 +832,10 @@ MEDIA QUERIES
       margin: 0 auto;
     }
 
+    .core-value h5{
+      text-align: center;
+    }
+
     .blog-card{
       margin: 0 auto;
       width: 16rem;
@@ -851,13 +874,21 @@ MEDIA QUERIES
         padding-bottom: 3rem;
       }
 
-      .contact {
-        height: 50vh;
-      }
+      /* .contact {
+        paddin
+      } */
       
       .contact h5{
         padding-top: 7rem;
       }
+
+      .home-contact h5 {
+        font-size: 23px;
+      }
+
+      .blog-heroimg-container img {
+        display: none;
+    }
       
 
     footer{
@@ -942,12 +973,29 @@ MEDIA QUERIES
   border-radius: 35px;
 }
 
-.contact {
-  height: 50vh;
+.contact-hero-row img{
+  margin-top: 3.5rem;
 }
 
-.contact h5{
-  padding-top: 13rem;
+.contact p {
+  font-size: 12px;
 }
+
+.what-we-offer-heading h5{
+  padding-top: 1rem;
+}
+
+.what-we-offer-text p{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+
+.blog-heroimg-container img {
+  margin-top: -5rem;
+  width: 120% !important;
+  margin-left: 0rem;
+}
+
 
 }
