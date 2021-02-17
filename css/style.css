@@ -113,6 +113,14 @@ nav {
     background-color: #fff;
     box-shadow: 6px 2px 12px 7px rgba(130, 125, 125, 0.44);
   }
+
+  #header.header-scrolled .logo img{
+    width: 15%;
+  }
+
+  #header.header-scrolled .nav_link_holder{
+    padding-top: 0.5rem;
+  }
   
   .logo img{
     float: left;
@@ -209,6 +217,14 @@ nav {
     font-family: var(--body_font);
 }
 
+.home-hero-img{
+  margin-left: 12rem;
+}
+
+.home-hero img{
+  width: 80%;
+}
+
 .home-hero-row{
   background: url(../assets/img/home-hero-bg.svg) bottom center / cover no-repeat;
   /* background-position: bottom center / cover; */
@@ -260,9 +276,7 @@ animation: none;
 100% {background-color: var(--color1);}
 }
 
-.home-hero img{
-    width: 100%;
-}
+
 
 /* end of home page hero */
 
@@ -300,10 +314,10 @@ animation: none;
 }
 
 .home-about p{
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     padding-top: 2rem;
-    line-height: 2;
+    line-height: 2.5;
     color: var(--color3);
     font-weight: bold;
 }
@@ -346,12 +360,15 @@ animation: none;
 
 .our-work-holder{
   display: flex;
-  width: 50%;
-  margin-bottom: 2rem;
+  /* width: 50%; */
+  margin-bottom: 5rem;
+  justify-content: space-between;
+  
 }
 
 .our-work-holder img{
-  width: 65%;
+  width: 30%;
+  border-radius: 3rem;
 }
 
 .bistar-ui{
@@ -360,13 +377,16 @@ padding-right: 0.7rem;
 
 .our-work-holder2{
   display: flex;
-  width: 50%;
+  /* width: 50%; */
   margin-bottom: 3rem;
+  justify-content: space-between;
 }
 
 .our-work-holder2 img{
-  width: 65%;
+  width: 30%;
   padding-right: 1rem;
+  border-radius: 3rem;
+  justify-content: space-between;
 }
 
 /* .solution-card{
@@ -784,6 +804,14 @@ MEDIA QUERIES
 
 @media (max-width: 600px) {
 
+  .home-hero-img{
+    margin-left: 0rem;
+  }
+
+  .home-hero img{
+    width: 100%;
+  }
+
   .default-btn2 {
     padding: 1em 1.5em;
     font-size: 14px;
@@ -793,6 +821,11 @@ MEDIA QUERIES
         float: left;
         width: 50%;
     }
+
+    #header.header-scrolled .logo img{
+      width: 50%;
+    }
+  
 
     .home-hero h5 {
       font-size: 25px;
@@ -916,6 +949,10 @@ MEDIA QUERIES
       padding-left: 0
     }
 
+    .home-hero-img{
+      margin-left: 0rem;
+    }
+
 }
 
 
@@ -924,6 +961,18 @@ MEDIA QUERIES
     .logo img{
         float: left;
         width: 30%;
+    }
+
+    /* #header.header-scrolled .logo img{
+      width: 12%;
+    }
+  
+    #header.header-scrolled .nav_link_holder{
+      padding-top: 0.3rem;
+    } */
+
+    .home-hero-img{
+      margin-left: 7rem;
     }
 
     .home-hero h5 {
